@@ -22,8 +22,8 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: -webkit-sticky;
-    position: sticky;
+    position: -webkit-fixed;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
@@ -51,4 +51,37 @@ header {
 .text-gradient-golden {
     color: #AE8625 !important;
     ;
+}
+
+.background-default {
+    background: rgb(29 29 29) !important;
+}
+
+.text-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40.4px;
+    letter-spacing: normal;
+}
+
+.text-explication {
+    font-size: 18px;
+}
+
+#section-main {
+    background: url(../image/mulher-direito.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.my-8 {
+    margin-top: 8rem !important;
+    margin-bottom: 3rem !important
+}
+
+.img-size {
+
+    max-width: 100%;
+    height: 300px;
 }
