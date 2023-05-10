@@ -8,7 +8,21 @@ const main = {
                 header.classList.add('linear-gradient-white')
             }
         });
+    },
+
+    swiperService() {
+        const swiper = new Swiper('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
     }
 }
 
 main.scrollBar();
+main.swiperService();
