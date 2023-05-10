@@ -23,7 +23,7 @@ const main = {
         });
     },
 
-    tipoEscrita() {
+    typewriter() {
         const title = document.getElementById('maquinaDeEscrever');
         const texto = title.innerHTML.split('');
         title.innerHTML = '';
@@ -35,4 +35,4 @@ const main = {
 
 main.scrollBar();
 main.swiperService();
-main.tipoEscrita();
+main.typewriter();
