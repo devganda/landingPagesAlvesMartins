@@ -21,8 +21,18 @@ const main = {
                 disableOnInteraction: false,
             },
         });
+    },
+
+    tipoEscrita() {
+        const title = document.getElementById('maquinaDeEscrever');
+        const texto = title.innerHTML.split('');
+        title.innerHTML = '';
+        texto.forEach((letra, i) => {
+            setTimeout(() => title.innerHTML += letra, 75 * i)
+        });
     }
 }
 
 main.scrollBar();
 main.swiperService();
+main.tipoEscrita();
