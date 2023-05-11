@@ -3,16 +3,26 @@
     /*linear-gradient(90deg,#050939 0%,#141a61 47.57%,#050939 93.19%);*/
 }
 
+.background-image {
+    background-image: linear-gradient(103.24deg, rgba(0, 8, 29, 0.9) 23.83%, rgba(0, 8, 29, 0.3) 96.1%),url(../image/background-mulherdireito.png);
+}
+
 body {
     width: 100% !important;
     height: 100vh !important;
     font-size: 16px !important;
-    background: var(--background-default) !important;
+    background: #131312 !important;
     color: #fff !important;
     font-family: "Gilroy", sans-serif !important;
     font-weight: 400 !important;
     font-family: 'Mohave';
     font-style: normal;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
 }
 
 header {
@@ -54,7 +64,7 @@ header {
 }
 
 .background-default {
-    background: rgb(29 29 29) !important;
+    /* background: rgb(29 29 29) !important; */
 }
 
 .text-title {
@@ -69,7 +79,14 @@ header {
 }
 
 #section-main {
-    background: url(../image/mulher-direito.svg);
+    background:  linear-gradient(28deg, #000000c4 50%, #000000bf 50%),  url(../image/mulher-direito.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#section-servico {
+    background:  linear-gradient(28deg, #000000de 50%, #000000de 50%),  url(../image/palacio-direito.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
