@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Mohave"; /* Substitua pelo nome que deseja dar à sua fonte */
+    src: url("../fonts/Mohave/Mohave-VariableFont_wght.ttf"); /* Substitua pelo caminho para o arquivo de fonte */
+}
+
 :root {
     --background-default: rgba(5, 5, 5, 0.9);
     /*linear-gradient(90deg,#050939 0%,#141a61 47.57%,#050939 93.19%);*/
@@ -17,6 +22,35 @@ body {
     font-weight: 400 !important;
     font-family: 'Mohave';
     font-style: normal;
+}
+
+.card-list-coment{
+    background: linear-gradient(180deg, #D5D5D5 1.56%, #A0A0A0 48.96%, #D4D4D4 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(3px);
+    border-radius: 3px!important;
+    padding: 2px 13px;
+}
+
+
+.list-coment{
+    gap: 1rem;
+}
+
+.text-coment-list{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-coment-list{
+    font-size: 23px!important;
+    margin: 0;
+} 
+
+.content-coment-list {    
+    gap: 10px;
+    align-items: center!important;
 }
 
 main {
@@ -54,7 +88,6 @@ header {
 
 .linear-gradient-white {
     background: linear-gradient(87.83deg, #BABABA 0%, #C3C3C3 6.77%, #FFFFFF 48.96%, #B0B0B0 100%);
-
     transition: backdrop-filter 0.5s;
 }
 
@@ -63,19 +96,37 @@ header {
     ;
 }
 
+.text-bnt{
+    font-family: 'Mohave';
+    font-style: normal;
+    /* font-weight: 700; */
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
 .background-default {
     /* background: rgb(29 29 29) !important; */
 }
 
 .text-title {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 40.4px;
-    letter-spacing: normal;
+    font-family: 'Mohave';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 40px;
+    text-transform: uppercase;
 }
 
 .text-explication {
-    font-size: 18px;
+    font-family: 'Mohave';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 
 #section-main {
@@ -98,9 +149,7 @@ header {
 }
 
 .img-size {
-
     max-width: 100%;
-    height: 300px;
 }
 
 .bg-black {
