@@ -265,8 +265,6 @@ header {
     }
 }
 
-
-
 @media only screen and (max-width: 767px) {
     .card-image-description {
         flex-direction: column;
@@ -280,6 +278,12 @@ header {
     .image-situation-desktop {
         display: none;
     }
+
+    .button-pulse {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -289,6 +293,11 @@ header {
 
     .image-situation-desktop {
         display: flex;
+        width: 100%;
+    }
+
+    .button-pulse {
+        display: block;
     }
 }
 
@@ -299,5 +308,10 @@ header {
 
     .image-situation-desktop {
         display: flex;
+        width: 100%;
+    }
+
+    .button-pulse {
+        display: block;
     }
 }
