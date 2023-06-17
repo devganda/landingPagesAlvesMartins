@@ -13,7 +13,7 @@ const main = {
     swiperService() {
         const swiper = new Swiper('.swiper-container', {
             direction: 'horizontal',
-            loop: true,
+            loop: false,
             slidesPerView: 'auto',
             spaceBetween: 10,
             autoplay: {
