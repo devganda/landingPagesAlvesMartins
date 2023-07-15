@@ -34,11 +34,9 @@ body {
 }
 
 .card-list-coment {
-    background: linear-gradient(180deg, #D5D5D5 1.56%, #A0A0A0 48.96%, #D4D4D4 100%);
+    background: linear-gradient(180deg, #131312 1.56%, #131312 48.96%, #131312 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(3px);
     border-radius: 3px !important;
-    padding: 2px 13px;
 }
 
 
@@ -53,10 +51,19 @@ body {
 }
 
 .title-coment-list {
-    font-size: 23px !important;
+    font-size: 22px !important;
     margin: 0;
 }
 
+.button-font {
+    font-size: 15px!important;
+}
+
+.space-div-bottom {
+    align-items: center;
+    display: flex;
+    margin-top: 43px!important
+}
 .content-coment-list {
     gap: 10px;
     align-items: center !important;
@@ -127,6 +134,7 @@ header {
 .text-explication {
     font-size: 20px;
     line-height: 28px;
+    text-align: justify;
 }
 
 #section-main {
@@ -145,7 +153,7 @@ header {
 
 .my-8 {
     margin-top: 8rem !important;
-    margin-bottom: 3rem !important
+    margin-bottom: 3rem !important;
 }
 
 .mb-10 {
@@ -256,6 +264,23 @@ header {
     animation: pulse 1s infinite;
 }
 
+.mb-0{
+    margin-bottom: 0px;
+}
+
+.image-cover{
+    width: 68px;
+    height: 70px;
+    background-color: #ddd;
+    border-radius: 63%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.padding-image-cover{
+    padding: 8px 15px 16px 4px;
+}
+
 @keyframes pisca {
 
     0%,
@@ -354,7 +379,18 @@ header {
         display: block;
     }
 
-  
+    .text-justify{
+        text-align: justify;
+    }
+
+    .mt-15{
+        margin-top: 15px!important;
+        
+    }
+
+    .w-93{
+        width: 93%;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -369,5 +405,33 @@ header {
 
     .button-pulse {
         display: block;
+    }
+
+    .text-explication{
+        padding-right: 273px;
+        text-align: justify;
+        margin-top: 45px;
+    }
+
+    .text-justify{
+        text-align: justify;
+    }
+
+    .mt-15{
+        margin-top: 15px!important;
+        
+    }
+
+    .w-93{
+        width: 71%!important;
+    }
+
+    .size-image-legal{
+        width: 44%!important;
+        height: 50%!important;
+    }
+
+    .section-mb{
+        margin-bottom: 120px;
     }
 }
