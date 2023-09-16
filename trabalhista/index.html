@@ -28,65 +28,59 @@
     <header class="text-center py-5 linear-gradient-white">
         <nav class="navbar navbar-expand-lg navbar-light flex-grow-1 text-white">
             <div class="container justify-content-center">
-                <img src="../assets/image/Logo.svg" alt="Logo">
+                <img width="300" src="../assets/image/logo-topo.svg" alt="Logo">
             </div>
         </nav>
         <!-- Inclua aqui o conteúdo do cabeçalho, como logotipo, menu, etc. -->
     </header>
 
-    <main class="container my-8">
+    <main class="my-8">
         <!-- Seção Principal -->
-        <section class="row section-mb" id="section-main">
-            <div class="d-grid gap-3 p-3 background-default">
-                <div class="d-flex card-image-description fadeOutLeft ">
-                    <div class="image-situation justify-content-center align-items-center fadeInTop">
-                        <img class="img-size" src="../assets/image/Logo-grande.svg" alt="Logo" />
+        <section class="mt-100" id="section-main-trabalhista">
+            <div class="container d-grid gap-3 p-3 background-default">
+                <div class="d-xl-flex card-image-description align-items-end fadeOutLeft ">
+                    <div class="image-situation d-md-block d-xl-none justify-content-center align-items-center fadeInTop">
+                        <img class="img-size" src="../assets/image/052.png" alt="Logo" />
                     </div>
                     <div class="p-4">
                         <h1 class="text-left text-gradient-golden fadeInRight" id="">
-                            <b> Escritório Alves & Martins Especilizados em Direito do Trabalho</b>
+                            <span class="brightness-filter">Escritório Alves & Martins</span> <br><b>Especilizados em Direito do Trabalho</b>
                         </h1>
 
-                        <p class="text-explication fadeInRight">
+                        <p class="text-explication fadeInRight brightness-filter">
                             Comprometidos em proteger os direitos dos trabalhadores, nossos advogados trabalhistas estão aqui para garantir justiça e equidade em todas as questões laborais.
                         </p>
                         <div class="button-pulse mt-4 fadeOutLeft space-div-bottom">
                             <a href="" class="btn button-font rounded shadow-lg p-3 mb-5 bg-linear-gradient-green text-white">
-                                FALE COM O ADVOGADO
+                                <i class="fa fa-whatsapp" aria-hidden="true"></i> FALE COM UM ADVOGADO 
                             </a>
                         </div>
                     </div>
-                    <div class="image-situation-desktop">
-                        <img class="img-size" src="../assets/image/Logo-grande.svg" alt="Logo" />
+                    <div class="image-situation-desktop d-md-none d-xl-block">
+                        <img src="../assets/image/052.png" alt="Logo" style="width: 650px; object-fit: contain;" />
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="row">
-            <div class="d-grid gap-3 p-3 background-default">
-                <h1 class="text-left text-gradient-golden mb-10 fadeInTop">
+            <div class="d-grid container gap-3 p-3 background-default">
+                <h1 class="text-center mb-10 fadeInTop">
                     <b>
-                        Em que podemos te ajudar? 
+                        <span class="brightness-filter">Em que podemos</span> te ajudar? 
                     </b>
                 </h2>
                 <div class="row">
                     <div class="col-xl-4 mb-10 fadeOutLeft">
-                        <div class="card-service p-4 d-flex flex-column gap-2">
+                        <div class="cards-services p-4 d-flex flex-column gap-2">
                             <div class="d-flex justify-content-center align-items-center">
-                                <i class="fa-solid fa-user-clock" style="font-size: 50px;"></i>
+                                <img class="w-200" src="../assets/image/horas-extras-icone.svg" alt="Horas extras"/>
                             </div>
                             <div class="d-flex justify-content-center align-items-center">
-                                <h4 class="text-gradient-golden">Horas Extras</h4>
-                            </div>
-                            <div class="d-flex justify-content-center align-items-center">
-                                <p class="text-justify">
+                                <p class="text-service">
                                     Entenda em quais situações é devido o  pagamento de horas extras.
                                 </p>
                             </div>
-                            <div class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex justify-content-end align-items-center">
                                 <a href="https://api.whatsapp.com/message/BAREVDCBSIVSA1?autoload=1&app_absent=0"
-                                    class="text-gradient-golden p-2 button-card-service">
+                                    class="p-2 button-card-services">
                                     Saiba Mais
                                 </a>
                             </div>
@@ -94,21 +88,19 @@
                     </div><!--col-xl-4-->
 
                     <div class="col-xl-4 mb-10 fadeInRight">
-                        <div class="card-service p-4 d-flex flex-column gap-2">
+                        <div class="cards-services p-4 d-flex flex-column gap-2">
                             <div class="d-flex justify-content-center align-items-center">
-                                <i class="fas fa-calculator" style="font-size: 50px;"></i>
+                                <img src="../assets/image/verbas-icone.svg" alt="Verbas Rescisórias" class="w-200">
                             </div>
+                            
                             <div class="d-flex justify-content-center align-items-center">
-                                <h4 class="text-gradient-golden">Verbas Rescisórias</h4>
-                            </div>
-                            <div class="d-flex justify-content-center align-items-center">
-                                <p class="text-justify">
+                                <p class="text-service">
                                     Saiba quais são as verbas rescisórias devidas na rescisão do contrato de trabalho.
                                 </p>
                             </div>
-                            <div class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex justify-content-end align-items-center">
                                 <a href="https://api.whatsapp.com/message/BAREVDCBSIVSA1?autoload=1&app_absent=0"
-                                    class="text-gradient-golden p-2 button-card-service">
+                                    class="p-2 button-card-services">
                                     Saiba Mais
                                 </a>
                             </div>
@@ -116,35 +108,70 @@
                     </div><!--col-xl-4-->
 
                     <div class="col-xl-4 mb-10 fadeOutLeft">
-                        <div class="card-service p-4 d-flex flex-column gap-2">
+                        <div class="cards-services p-4 d-flex flex-column gap-2">
                             <div class="d-flex justify-content-center align-items-center">
-                                <i aria-hidden="true" class="fas fa-handshake-slash" style="font-size: 50px;"></i>
+                                <img src="../assets/image/rescisao-icone.svg" alt="Verbas Rescisórias" class="w-200">
                             </div>
                             <div class="d-flex justify-content-center align-items-center">
-                                <h4 class="text-gradient-golden">Rescisão Indireta</h4>
-                            </div>
-                            <div class="d-flex justify-content-center align-items-center">
-                                <p class="text-justify">
+                                <p class="text-service">
                                     Rescisão por culpa da empresa em razão do descumprimento do contrato de trabalho. 
                                 </p>
                             </div>
-                            <div class="d-flex justify-content-center align-items-center">
+                            <div class="d-flex justify-content-end align-items-center">
                                 <a href="https://api.whatsapp.com/message/BAREVDCBSIVSA1?autoload=1&app_absent=0"
-                                    class="text-gradient-golden p-2 button-card-service">
+                                    class="p-2 button-card-services">
                                     Saiba Mais
                                 </a>
                             </div>
                         </div>
                     </div><!--col-xl-4-->
-
-                    <h2 class="col-12 text-title text-left fadeInRight text-gradient-golden">
-                        Lembre-se, o tempo é essencial quando se trata de questões trabalhistas, então não espere mais, entre em contato conosco hoje mesmo.
-                    </h2>
                 </div>
             </div>
         </section>
 
-        <section class="row">
+        <section class="section-mb mt-4" id="section-juridico" style="padding: 25px;">
+            <div class="col-12 d-grid gap-3 p-3 container">
+                <div class="mb-4">
+                    <h1 class="text-center text-gradient-golden fadeInRight fs-8" style="font-size: 4rem;">
+                        <b>CORPO JURÍDICO</b>
+                    </h1>
+                </div>
+                <div class="d-lg-flex gap-4 mt-4">
+                    <div class="p-2 d-flex align-items-center flex-column justify-content-center">
+                        <div>
+                            <h1 class="text-gradient-golden text-center">Dr.Igor Alves</h1>
+                        </div>
+                        <div class="p-2 d-flex align-items-center justify-content-center">
+                            <p class="card-text text-justify brightness-filter" style="font-size: 1.2rem; width: 80%;">
+                                Advogado, regularmente inscrito na OAB-DF n° 64.974 e na OAB-GO <br>
+
+                                Sócio Fundador do Escritório Alves & Martins Advocacia<br>
+                                Direito Sucessório e Direito de Família<br>
+                                Pós-graduado Direito Constitucional e aluno especial no mestrado da UNB.<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-2 d-flex align-items-center flex-column justify-content-center">
+                        <div>
+                            <h1 class="text-gradient-golden text-center">Dr. Ezequiel M. Martins</h1>
+                        </div>
+                        <div class="p-2 d-flex align-items-center justify-content-center">
+                            <p class="card-text text-justify brightness-filter" style="font-size: 1.2rem; width: 80%;">
+                                Advogado, regularmente inscrito na OAB-DF n° 67.872 e OAB-GO n° 62.633<br>
+
+                                Sócio Fundador do Escritório Alves & Martins Advocacia<br>
+                                Especialista em Ações Trabalhistas<br>
+                                Pós-graduando em Direito e Processo do Trabalho<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a href="https://api.whatsapp.com/message/BAREVDCBSIVSA1?autoload=1&app_absent=0" class="whatsapp-button">
+            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        </a>
+        <!--<section class="row">
             <div class="col-12 d-grid gap-3 p-3 background-default">
                 <h2 class="col-12 text-title text-left text-gradient-golden fadeInRight">Alguns de nossos clientes e sua opinião sobre nossos serviços</h2>
                 <div class="row">
@@ -176,7 +203,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
 
     </main>
 
@@ -185,4 +212,6 @@
           <p>&copy; 2023 Direitos Reservados | Advogado Trabalhista</p>
         </div>
     </footer>
+    
+    <script src="../assets/js/main.js"></script>
 </body>

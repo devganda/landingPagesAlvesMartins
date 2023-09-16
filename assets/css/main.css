@@ -25,7 +25,7 @@ body {
     width: 100% !important;
     height: 100vh !important;
     font-size: 16px !important;
-    background: #131312 !important;
+    background: #00022B !important;
     color: #fff !important;
     font-family: "Gilroy", sans-serif !important;
     font-weight: 400 !important;
@@ -103,13 +103,14 @@ header {
 }
 
 .linear-gradient-white {
-    background: linear-gradient(87.83deg, #BABABA 0%, #C3C3C3 6.77%, #FFFFFF 48.96%, #B0B0B0 100%);
+    /*linear-gradient(87.83deg, #BABABA 0%, #C3C3C3 6.77%, #FFFFFF 48.96%, #B0B0B0 100%);*/
+    background: #c4A140;
     transition: backdrop-filter 0.5s;
 }
 
 .text-gradient-golden {
-    color: #AE8625 !important;
-    ;
+    color: #c4A140 !important;
+    
 }
 
 .text-bnt {
@@ -133,22 +134,57 @@ header {
 
 .text-explication {
     font-size: 20px;
-    line-height: 28px;
     text-align: justify;
 }
 
+.brightness-filter{
+    filter: brightness(0.7);
+}
+
 #section-main {
-    background: linear-gradient(28deg, #000000c4 50%, #000000bf 50%), url(../image/mulher-direito.svg);
+    background: linear-gradient(0deg, #00000000 50%, #00000000 50%), url(../image/logo-home.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+#section-main-trabalhista {
+    background: linear-gradient(0deg, #00000000 50%, #00000000 50%), url(../image/logo-fundo-trabalhista.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    background-attachment: fixed;
+}
+
+#section-main-trabalhistas {
+    background: linear-gradient(0deg, #00000000 50%, #00000000 50%), url(../image/logo-fundo-trabalhista.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-attachment: fixed;
+    background-size: 55% 100%;
+}
+#section-main-trabalhista {
+    background: linear-gradient(0deg, #00000000 50%, #00000000 50%), url(../image/logo-fundo-trabalhista.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    background-attachment: fixed;
+}
+
+#section-servico {
+    /*background: linear-gradient(28deg, #000000de 50%, #000000de 50%), url(../image/palacio-direito.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-#section-servico {
-    background: linear-gradient(28deg, #000000de 50%, #000000de 50%), url(../image/palacio-direito.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+#section-juridico{
+    background-image: url('../image/igor.png'), url('../image/ezequiel.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, right bottom;
+    background-attachment: fixed;
+    /*background-size: 79% auto, 89% auto;*/
 }
 
 .my-8 {
@@ -164,12 +200,16 @@ header {
     max-width: 100%;
 }
 
+.bg-yellow-site{
+    background: #c4a140!important;
+}
+
 .bg-black {
     background: rgba(5, 5, 5, 0.9);
 }
 
 .bg-linear-gradient-green {
-    background-color: #25D366 !important;
+    background-color: #c4A140!important;
     /*linear-gradient(86.6deg, #1FAF38 2.69%, rgba(31, 175, 56, 0.61) 53.37%, #1FAF38 100%);*/
     transition: all 0.3s ease !important;
     animation: pulse 2s infinite;
@@ -177,6 +217,11 @@ header {
 
 .bg-linear-gradient-green:hover {
     filter: brightness(0.7);
+}
+
+.rounded-yellow{
+    border: solid 1px #c4A140!important;
+    border-radius: 1.7rem!important;
 }
 
 .fadeOutLeft {
@@ -195,6 +240,14 @@ header {
     animation-name: fade-in-top;
     animation-duration: 1s;
     transition: all 0.3s ease;
+}
+
+.w-200{
+    width:200px;
+}
+
+.w-120{
+    width: 120px;
 }
 
 .swiper-container {
@@ -226,6 +279,20 @@ header {
     animation: pisca .7s infinite;
 }
 
+.button-card-services {
+    border: 1px solid #c4A140;
+    border-radius: 1rem;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button-card-services:hover {
+    background-color: #c4A140;
+    color: #fff;
+    border-image: none;
+}
+
 .button-card-service {
     border: 1px solid;
     border-image: linear-gradient(to right, #FFFFFF 0%, #FFFFFF 25%, #000000 50%, #FFFFFF 100%);
@@ -246,6 +313,15 @@ header {
     border-image: linear-gradient(to top, #FFFFFF 0%, #131312 94%, #131312 84%, #131312 100%);
     border-image-slice: 1;
     box-shadow: 0px 5px 6px rgba(255, 255, 255, 0.2);
+}
+
+.text-service{
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+}
+
+.cards-services{
+    border-right: 1px solid #cccccca3;
 }
 
 .whatsapp-button {
@@ -362,6 +438,23 @@ header {
         justify-content: center;
         align-items: center;
     }
+
+    #section-juridico{
+        background-image: url('../image/igor.png'), url('../image/ezequiel.png');
+        background-repeat: no-repeat, no-repeat;
+        background-position: left bottom, right bottom;
+        background-attachment: fixed;
+        background-size: 79% auto, 89% auto;
+    }
+
+    #section-main-trabalhistas {
+        background: linear-gradient(0deg, #00000000 50%, #00000000 50%), url(../image/logo-fundo-trabalhista.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        background-attachment: fixed;
+        background-size: 100% 81%;
+    }
     
 }
 
@@ -390,7 +483,25 @@ header {
 
     .w-93{
         width: 93%;
+    } 
+    
+    #section-juridico{
+        background-image: url('../image/igor.png'), url('../image/ezequiel.png');
+        background-repeat: no-repeat, no-repeat;
+        background-position: left bottom, right bottom;
+        background-attachment: fixed;
+        background-size: 63% auto, 93% 62%;
     }
+
+    #section-main-trabalhistas {
+        background: linear-gradient(0deg, #00000000 50%, #00000000 50%), url(../image/logo-fundo-trabalhista.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        background-attachment: fixed;
+        background-size: 100% 81%;
+    }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -408,7 +519,6 @@ header {
     }
 
     .text-explication{
-        padding-right: 273px;
         text-align: justify;
         margin-top: 45px;
     }
@@ -433,5 +543,10 @@ header {
 
     .section-mb{
         margin-bottom: 120px;
+    }
+
+    
+    .mt-100{
+        margin-top: -100px;
     }
 }
