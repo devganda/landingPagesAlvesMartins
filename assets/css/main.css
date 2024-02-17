@@ -357,6 +357,14 @@ header {
     padding: 8px 15px 16px 4px;
 }
 
+.mt-depoiment{
+    margin-top: 1.5rem!important;
+}
+
+.photo-depoiment-top{
+    width: 100%;
+}
+
 @keyframes pisca {
 
     0%,
@@ -502,6 +510,13 @@ header {
         background-size: 100% 81%;
     }
 
+   .mt-depoiment{
+        margin-top: 1.5rem;
+    }
+    
+    .photo-depoiment-top{
+        width: 72%;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -542,11 +557,19 @@ header {
     }
 
     .section-mb{
-        margin-bottom: 120px;
+        margin-bottom: 30px;
     }
 
     
     .mt-100{
         margin-top: -100px;
+    }
+
+    .mt-depoiment{
+        margin-top: 8rem!important;
+    }
+
+    .photo-depoiment-top{
+        width: 72%;
     }
 }
