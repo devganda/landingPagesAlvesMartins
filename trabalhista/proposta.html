@@ -370,7 +370,7 @@
                 </div>
 
                 <div class="hero-visual">
-                    <div class="photo-frame"><img data-parallax="0.12" src="../assets/image/ezequiel-adv.png" alt="Dr. Ezequiel M. Martins, advogado trabalhista"></div>
+                    <div class="photo-frame"><img data-parallax="0.12" data-scale="1.32" style="object-position:55% 30%;transform-origin:55% 28%" src="../assets/image/ezequiel-em-pe.jpeg" alt="Dr. Ezequiel M. Martins, advogado trabalhista"></div>
                     <div class="float-card fc1" data-speed="-0.06">
                         <div class="ic"><i class="fa fa-balance-scale"></i></div>
                         <div><b>Análise individual</b><small>Cada caso é único</small></div>
@@ -509,11 +509,11 @@
                 </div>
                 <div class="team">
                     <article class="person reveal">
-                        <div class="ph"><img data-parallax="0.1" src="../assets/image/ezequiel-adv.png" alt="Dr. Ezequiel M. Martins" loading="lazy"></div>
+                        <div class="ph"><img data-parallax="0.1" data-scale="1.22" style="object-position:55% 12%;transform-origin:55% 20%" src="../assets/image/ezequiel-em-pe.jpeg" alt="Dr. Ezequiel M. Martins" loading="lazy"></div>
                         <div class="info">
                             <span class="oab">OAB-DF 67.872 · OAB-GO 62.633</span>
                             <h3>Dr. Ezequiel M. Martins</h3>
-                            <p>Sócio fundador do Escritório Alves & Martins Advocacia. Especialista em Ações Trabalhistas e pós-graduando em Direito e Processo do Trabalho.</p>
+                            <p>Sócio-fundador e responsável pelo setor trabalhista da Alves & Martins Advocacia. Presidente da Comissão de Direito do Trabalho da OAB Planaltina e autor de artigos jurídicos na área trabalhista.</p>
                         </div>
                     </article>
                     <article class="person reveal" style="--d:150ms">
@@ -634,7 +634,7 @@
                         const r = el.parentElement.getBoundingClientRect();
                         if (r.bottom < 0 || r.top > innerHeight) return;
                         const p = (r.top + r.height / 2 - innerHeight / 2) / innerHeight;
-                        el.style.transform = `translate3d(0, ${p * -parseFloat(el.dataset.parallax) * 200}px, 0) scale(1.04)`;
+                        el.style.transform = `translate3d(0, ${p * -parseFloat(el.dataset.parallax) * 200}px, 0) scale(${el.dataset.scale || 1.04})`;
                     });
                 }
                 ticking = false;
