@@ -139,18 +139,6 @@
         }
         .photo-frame img { width: 100%; height: 118%; object-fit: cover; object-position: 30% 20%; will-change: transform; }
         .photo-frame::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 55%, rgba(0, 2, 43, .75)); }
-        .float-card {
-            position: absolute; z-index: 3; padding: 14px 18px; border-radius: 16px;
-            background: rgba(10, 14, 70, .6); border: 1px solid var(--glass-border);
-            backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
-            display: flex; gap: 12px; align-items: center; font-size: .86rem; line-height: 1.3;
-            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, .6); will-change: transform;
-        }
-        .float-card .ic { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; background: linear-gradient(135deg, var(--gold-soft), var(--gold-deep)); color: var(--navy-900); font-size: 1.1rem; }
-        .float-card b { display: block; font-size: .95rem; }
-        .float-card small { color: var(--ink-dim); }
-        .fc1 { left: -10px; top: 70px; }
-        .fc2 { right: -6px; bottom: 90px; }
         .scroll-hint { position: absolute; bottom: 26px; left: 50%; translate: -50% 0; z-index: 2; width: 24px; height: 40px; border: 2px solid var(--glass-border); border-radius: 14px; }
         .scroll-hint::after { content: ""; position: absolute; left: 50%; top: 7px; width: 4px; height: 8px; margin-left: -2px; border-radius: 2px; background: var(--gold); animation: wheel 1.8s infinite; }
         @keyframes wheel { 0% { opacity: 1; transform: none; } 100% { opacity: 0; transform: translateY(14px); } }
@@ -312,7 +300,6 @@
             .cards, .docs ul { grid-template-columns: 1fr; }
             .sec { padding: 80px 0; }
             .hero { padding-top: 110px; }
-            .fc1 { left: 0; top: 20px; } .fc2 { right: 0; bottom: 40px; }
             .nav img { width: 150px; }
             .nav .btn { display: none; }
             .row img { height: 190px; }
@@ -371,14 +358,6 @@
 
                 <div class="hero-visual">
                     <div class="photo-frame"><img data-parallax="0.12" data-scale="1.32" style="object-position:55% 30%;transform-origin:55% 28%" src="../assets/image/ezequiel-em-pe.jpeg" alt="Dr. Ezequiel M. Martins, advogado trabalhista"></div>
-                    <div class="float-card fc1" data-speed="-0.06">
-                        <div class="ic"><i class="fa fa-balance-scale"></i></div>
-                        <div><b>Análise individual</b><small>Cada caso é único</small></div>
-                    </div>
-                    <div class="float-card fc2" data-speed="0.08">
-                        <div class="ic"><i class="fa fa-comments"></i></div>
-                        <div><b>Fale sem compromisso</b><small>Tire suas dúvidas iniciais</small></div>
-                    </div>
                 </div>
             </div>
             <div class="scroll-hint" aria-hidden="true"></div>
